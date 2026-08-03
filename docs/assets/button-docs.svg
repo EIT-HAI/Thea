@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="73" height="30" viewBox="0 0 73 30" role="img" aria-labelledby="title">
+  <title id="title">Docs</title>
+  <style>
+    .ink { color: #2e2f2a; }
+    .label { fill: currentColor; font-family: Lato, Arial, sans-serif; font-size: 18.36px; font-weight: 400; }
+    @media (prefers-color-scheme: dark) { .ink { color: #f2f3f2; } }
+  </style>
+  <g class="ink">
+    <svg x="0" y="5.5" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <path d="M4 5.5c2.7-.7 5.3-.2 8 1.5v12c-2.7-1.7-5.3-2.2-8-1.5z"/>
+      <path d="M20 5.5c-2.7-.7-5.3-.2-8 1.5v12c2.7-1.7 5.3-2.2 8-1.5z"/>
+    </svg>
+    <text class="label" x="27.1" y="21">Docs</text>
+  </g>
+</svg>
