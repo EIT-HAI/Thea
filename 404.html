@@ -1,0 +1,11 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>Redirecting to eit-hai.github.io/thea/</title>
+<style>body{font-family:system-ui;display:grid;place-items:center;min-height:100vh;margin:0}</style>
+<script>
+  // 这是 EIT-HAI/Thea 项目页的 404:凡是打到 /Thea/... 的路径,原样搬到 /thea/...。
+  // 小写路径由组织主站直接命中,不会走到这里,所以不存在重定向循环。
+  var p = location.pathname, q = p.replace(/^\/Thea(\/|$)/, '/thea/');
+  location.replace((q === p ? '/thea/' : q) + location.search + location.hash);
+</script>
+<p>Redirecting to <a href="https://eit-hai.github.io/thea/">eit-hai.github.io/thea/</a>&hellip;</p>
