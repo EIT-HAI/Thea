@@ -1,0 +1,45 @@
+name: Feature request
+description: Propose a focused change to a public Thea boundary or workflow.
+title: "[Feature]: "
+labels:
+  - enhancement
+body:
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - Agentic Loop or Context
+        - Tools, hooks, or Evaluation
+        - Observation or Scene Graph boundary
+        - Memory, Skills, or Embodiment Profile
+        - Simulation adapter
+        - Lark channel
+        - Packaging, documentation, or developer experience
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: Describe the user or deployment problem without prescribing an implementation.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed public boundary
+      description: Explain the smallest interface or behavior change that would solve the problem.
+    validations:
+      required: true
+  - type: textarea
+    id: compatibility
+    attributes:
+      label: Compatibility and safety
+      description: Note API, configuration, security, evaluation, or physical-safety implications.
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered

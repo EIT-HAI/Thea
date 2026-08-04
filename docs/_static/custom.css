@@ -1,0 +1,290 @@
+:root {
+  --thea-ink: #303234;
+  --thea-muted: #696d70;
+  --thea-paper: #fbfaf7;
+  --thea-line: #ddd9d2;
+  --thea-slate: #5f7388;
+  --thea-teal: #6d8986;
+  --thea-gold: #a18a55;
+}
+
+.thea-document-title {
+  display: none;
+}
+
+body {
+  letter-spacing: -0.006em;
+}
+
+.sidebar-brand-text {
+  font-weight: 720;
+  letter-spacing: -0.035em;
+}
+
+.sidebar-tree .caption-text {
+  color: var(--thea-gold);
+  font-size: 0.72rem;
+  font-weight: 760;
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
+}
+
+.content {
+  line-height: 1.68;
+}
+
+.content h1,
+.content h2,
+.content h3 {
+  font-weight: 660;
+  letter-spacing: -0.03em;
+}
+
+.content h2 {
+  margin-top: 2.7rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--color-background-border);
+}
+
+.content table {
+  border-radius: 0.45rem;
+  box-shadow: none;
+}
+
+.content code {
+  border: 1px solid var(--color-background-border);
+  border-radius: 0.28rem;
+}
+
+.content pre code {
+  border: 0;
+}
+
+.thea-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(15rem, 0.8fr);
+  gap: 3rem;
+  align-items: end;
+  padding: 3.8rem 0 4rem;
+  border-bottom: 1px solid var(--color-background-border);
+}
+
+.thea-eyebrow,
+.thea-section-heading > span {
+  display: block;
+  margin-bottom: 0.8rem;
+  color: var(--thea-gold);
+  font-size: 0.72rem;
+  font-weight: 760;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+.thea-hero h1 {
+  max-width: 14ch;
+  margin: 0;
+  font-size: clamp(2.3rem, 5vw, 4.6rem);
+  font-weight: 690;
+  line-height: 0.98;
+  letter-spacing: -0.06em;
+}
+
+.thea-hero__copy > p {
+  max-width: 42rem;
+  margin: 1.6rem 0 0;
+  color: var(--color-foreground-secondary);
+  font-size: 1rem;
+}
+
+.thea-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+  margin-top: 1.8rem;
+}
+
+.thea-button {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2.6rem;
+  padding: 0.55rem 1rem;
+  border: 1px solid var(--color-background-border);
+  border-radius: 999px;
+  color: var(--color-foreground-primary);
+  font-size: 0.82rem;
+  font-weight: 680;
+  text-decoration: none;
+}
+
+.thea-button:hover {
+  border-color: var(--color-brand-primary);
+  color: var(--color-brand-primary);
+}
+
+.thea-button--primary {
+  border-color: var(--color-brand-primary);
+  background: var(--color-brand-primary);
+  color: var(--color-background-primary);
+}
+
+.thea-button--primary:hover {
+  background: transparent;
+  color: var(--color-brand-primary);
+}
+
+.thea-hero__signal {
+  border-top: 2px solid var(--color-foreground-primary);
+}
+
+.thea-hero__signal > div {
+  display: grid;
+  grid-template-columns: 2.2rem 1fr;
+  gap: 0.8rem;
+  padding: 0.9rem 0;
+  border-bottom: 1px solid var(--color-background-border);
+}
+
+.thea-hero__signal strong {
+  color: var(--thea-gold);
+  font-variant-numeric: tabular-nums;
+}
+
+.thea-hero__signal span {
+  color: var(--color-foreground-secondary);
+  font-size: 0.78rem;
+  line-height: 1.45;
+}
+
+.thea-architecture,
+.thea-paths,
+.thea-quickstart {
+  padding: 4rem 0;
+}
+
+.thea-section-heading {
+  max-width: 42rem;
+  margin-bottom: 2rem;
+}
+
+.thea-section-heading h2,
+.thea-quickstart h2 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: clamp(1.65rem, 3vw, 2.5rem);
+}
+
+.thea-section-heading p,
+.thea-quickstart p {
+  color: var(--color-foreground-secondary);
+}
+
+.thea-architecture__frame {
+  overflow: hidden;
+  padding: 1rem;
+  border: 1px solid var(--color-background-border);
+  border-radius: 0.8rem;
+  background: linear-gradient(
+    135deg,
+    color-mix(in srgb, var(--thea-slate) 8%, transparent),
+    color-mix(in srgb, var(--thea-gold) 7%, transparent)
+  );
+}
+
+.thea-architecture__frame img {
+  display: block;
+  width: 100%;
+  border-radius: 0.45rem;
+}
+
+.thea-card-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  border-top: 1px solid var(--color-background-border);
+  border-left: 1px solid var(--color-background-border);
+}
+
+.thea-card {
+  min-height: 13rem;
+  padding: 1.4rem;
+  border-right: 1px solid var(--color-background-border);
+  border-bottom: 1px solid var(--color-background-border);
+  color: var(--color-foreground-primary);
+  text-decoration: none;
+  transition:
+    background-color 160ms ease,
+    transform 160ms ease;
+}
+
+.thea-card:hover {
+  background: var(--color-background-secondary);
+  transform: translateY(-2px);
+}
+
+.thea-card__index {
+  color: var(--thea-gold);
+  font-size: 0.72rem;
+  font-weight: 720;
+}
+
+.thea-card h3 {
+  margin: 2rem 0 0.6rem;
+  font-size: 1.15rem;
+}
+
+.thea-card p {
+  min-height: 3.2rem;
+  margin: 0;
+  color: var(--color-foreground-secondary);
+  font-size: 0.8rem;
+}
+
+.thea-card strong {
+  display: block;
+  margin-top: 1rem;
+  color: var(--color-brand-primary);
+  font-size: 0.78rem;
+}
+
+.thea-quickstart {
+  display: grid;
+  grid-template-columns: 0.85fr 1.15fr;
+  gap: 2.5rem;
+  align-items: start;
+  margin-bottom: 2rem;
+  border-top: 1px solid var(--color-background-border);
+}
+
+.thea-quickstart .highlight {
+  margin: 0;
+}
+
+.thea-quickstart__next {
+  grid-column: 2;
+  margin-top: -1.6rem;
+  font-size: 0.82rem;
+}
+
+@media (max-width: 67rem) {
+  .thea-hero {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 2.5rem 0 3rem;
+  }
+
+  .thea-card-grid,
+  .thea-quickstart {
+    grid-template-columns: 1fr;
+  }
+
+  .thea-quickstart__next {
+    grid-column: 1;
+    margin-top: -1rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .thea-card {
+    transition: none;
+  }
+}

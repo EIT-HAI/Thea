@@ -1,0 +1,7 @@
+Thea Harness
+Copyright 2026 EIT-HAI
+
+This distribution contains only the provider-neutral harness package.
+Robot policies, deployment credentials, datasets, Skill packs,
+embodiment profiles, replay data, MCP tool servers, and Thea application
+integrations are not part of this licensed component.

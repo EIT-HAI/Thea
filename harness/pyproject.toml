@@ -1,0 +1,72 @@
+[build-system]
+requires = ["setuptools>=77", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "thea-harness"
+version = "0.1.0"
+description = "Provider-neutral Agentic Loop harness for embodied agents"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "Apache-2.0"
+license-files = ["LICENSE", "NOTICE"]
+authors = [{name = "EIT-HAI"}]
+dependencies = [
+  "anyio>=4.0,<5",
+  "mcp>=1.0,<2",
+  "python-dotenv>=1,<2",
+  "PyYAML>=6.0,<7",
+  "rich>=13,<15",
+]
+
+[project.scripts]
+thea-cli = "harness.cli:main"
+
+[project.optional-dependencies]
+anthropic = ["anthropic>=0.40,<1"]
+openai = ["openai>=1.40,<3"]
+test = ["pytest>=7,<10"]
+dev = [
+  "build>=1.2,<2",
+  "pytest>=7,<10",
+  "ruff>=0.12,<1",
+]
+all = [
+  "anthropic>=0.40,<1",
+  "openai>=1.40,<3",
+]
+
+[tool.setuptools]
+packages = [
+  "harness",
+  "harness.configuration",
+  "harness.context",
+  "harness.evaluation",
+  "harness.memory",
+  "harness.mcp",
+  "harness.models",
+  "harness.observability",
+  "harness.runtime",
+  "harness.skills",
+  "harness.terminal",
+  "harness.tools",
+  "harness.world",
+]
+package-dir = {harness = "."}
+include-package-data = false
+
+[tool.setuptools.package-data]
+harness = ["config.example.yaml", "py.typed"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = [".."]
+addopts = "-ra --tb=short"
+
+[tool.ruff]
+target-version = "py310"
+line-length = 88
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
+ignore = ["E501"]

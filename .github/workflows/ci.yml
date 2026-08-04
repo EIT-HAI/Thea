@@ -1,0 +1,133 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  harness:
+    name: Harness · Python ${{ matrix.python-version }}
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ["3.10", "3.11", "3.12", "3.13"]
+
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+          cache: pip
+          cache-dependency-path: harness/pyproject.toml
+      - name: Install Harness
+        run: python -m pip install -e './harness[dev,all]'
+      - name: Test
+        working-directory: harness
+        run: python -m pytest -q
+      - name: Lint
+        working-directory: harness
+        run: python -m ruff check .
+      - name: Check formatting
+        working-directory: harness
+        run: python -m ruff format --check .
+
+  lark:
+    name: Lark · Python ${{ matrix.python-version }}
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ["3.10", "3.11", "3.12", "3.13"]
+
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+          cache: pip
+          cache-dependency-path: |
+            harness/pyproject.toml
+            lark/pyproject.toml
+      - name: Install packages
+        run: |
+          python -m pip install -e './harness[all]'
+          python -m pip install -e './lark[dev]'
+      - name: Test
+        working-directory: lark
+        run: python -m pytest -q
+      - name: Lint
+        working-directory: lark
+        run: python -m ruff check .
+      - name: Check formatting
+        working-directory: lark
+        run: python -m ruff format --check .
+
+  simulation:
+    name: Simulation · Python ${{ matrix.python-version }}
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ["3.10", "3.11", "3.12", "3.13"]
+
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+          cache: pip
+          cache-dependency-path: |
+            harness/pyproject.toml
+            simulation/pyproject.toml
+      - name: Install packages
+        run: |
+          python -m pip install -e './harness[all]'
+          python -m pip install -e './simulation[dev]'
+      - name: Test
+        working-directory: simulation
+        run: python -m pytest -q
+      - name: Lint
+        working-directory: simulation
+        run: python -m ruff check .
+      - name: Check formatting
+        working-directory: simulation
+        run: python -m ruff format --check .
+
+  release-smoke:
+    name: Build and install
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate launch scripts
+        run: bash -n install.sh run.sh
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.10"
+          cache: pip
+          cache-dependency-path: |
+            harness/pyproject.toml
+            simulation/pyproject.toml
+            lark/pyproject.toml
+      - name: Install build frontend
+        run: python -m pip install build
+      - name: Build distributions
+        run: |
+          python -m build harness
+          python -m build simulation
+          python -m build lark
+      - name: Install wheels
+        run: |
+          python -m pip install harness/dist/*.whl
+          python -m pip install simulation/dist/*.whl
+          python -m pip install lark/dist/*.whl
+          python -m pip check
+      - name: Verify public imports and CLI
+        run: |
+          cd /tmp
+          python -c "import harness, thea_lark, thea_simulation; print(harness.__version__)"
+          thea-lark --help

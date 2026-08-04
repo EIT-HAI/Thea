@@ -1,0 +1,44 @@
+name: Documentation
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "docs/**"
+      - "harness/docs/**"
+      - "simulation/README.md"
+      - ".github/workflows/documentation.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: thea-documentation
+  cancel-in-progress: true
+
+jobs:
+  publish:
+    name: Build and publish
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.10"
+          cache: pip
+          cache-dependency-path: docs/requirements.txt
+      - name: Install documentation dependencies
+        run: python -m pip install -r docs/requirements.txt
+      - name: Build documentation
+        run: make -C docs html
+      - name: Publish project documentation
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          personal_token: ${{ secrets.THEA_DOCS_DEPLOY_TOKEN }}
+          external_repository: EIT-HAI/EIT-HAI.github.io
+          publish_branch: gh-pages
+          publish_dir: docs/_build/html
+          destination_dir: thea/documentation
+          keep_files: true
+          commit_message: Deploy Thea documentation

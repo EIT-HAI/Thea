@@ -1,0 +1,21 @@
+include LICENSE
+include NOTICE
+include README.md
+include config.example.yaml
+include py.typed
+include *.py
+recursive-include configuration *.py
+recursive-include context *.py
+recursive-include evaluation *.py
+recursive-include memory *.py
+recursive-include mcp *.py
+recursive-include models *.py
+recursive-include observability *.py
+recursive-include runtime *.py
+recursive-include skills *.py
+recursive-include tools *.py
+recursive-include world *.py
+recursive-include docs *.md
+prune tests
+global-exclude __pycache__
+global-exclude *.py[cod]

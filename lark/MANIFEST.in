@@ -1,0 +1,8 @@
+include LICENSE
+include NOTICE
+include README.md
+include config.example.yaml
+recursive-include docs *.md
+recursive-exclude tests *
+global-exclude __pycache__
+global-exclude *.py[cod]

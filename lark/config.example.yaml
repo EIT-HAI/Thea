@@ -1,0 +1,20 @@
+# Safe, credential-free example. The API key is read from the environment.
+servers: []
+
+llm:
+  provider: anthropic
+  model: claude-sonnet-4-20250514
+  api_key_env: ANTHROPIC_API_KEY
+  max_tokens: 4096
+
+context:
+  compaction:
+    enabled: true
+    context_window: 200000
+    reserve_tokens: 16384
+    keep_recent_turns: 4
+    keep_recent_tokens: 20000
+    tool_result_max_chars: 2000
+    reasoning_max_chars: 2000
+    max_input_chars: 400000
+    max_summary_rounds: 8

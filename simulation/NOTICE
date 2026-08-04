@@ -1,0 +1,7 @@
+Thea Simulation Adapters
+Copyright 2026 EIT-HAI
+
+This distribution contains Harness-side integration boundaries for
+user-managed LIBERO and RoboTwin environments. Simulator engines, benchmark
+assets, task data, robot policies, deployment credentials, and environment
+installations are not part of this licensed component.

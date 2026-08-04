@@ -1,0 +1,63 @@
+name: Bug report
+description: Report a reproducible problem in the public Thea packages.
+title: "[Bug]: "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Do not include credentials, private robot endpoints, user data, or sensitive run logs. Report security issues through the private process in SECURITY.md.
+  - type: dropdown
+    id: package
+    attributes:
+      label: Affected package
+      options:
+        - thea-harness
+        - thea-simulation
+        - thea-lark
+        - Repository scripts or documentation
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Version or commit
+      placeholder: 0.1.0 or a commit SHA
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: Include Python version, operating system, provider, and relevant optional dependencies.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Minimal reproduction
+      description: Provide the smallest credential-free example or command sequence that demonstrates the problem.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+    validations:
+      required: true
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: Safety and privacy
+      options:
+        - label: I reproduced this without risking people, hardware, or valuable objects.
+          required: true
+        - label: I removed credentials, private paths, user data, images, and sensitive deployment details.
+          required: true
