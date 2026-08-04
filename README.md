@@ -8,7 +8,7 @@
   <a href="#citation"><img src="docs/assets/button-bibtex.svg" alt="Jump to BibTeX" height="30"></a>
 </p>
 
-<h3 align="center">TL;DR: <em>We bring coding agents to the physical world.</em></h3>
+<h3 align="center">TL;DR: Thea brings coding agents to the physical world.</h3>
 
 <br>
 
