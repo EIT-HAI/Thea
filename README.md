@@ -1,8 +1,8 @@
 <h1 align="center">Towards the Harness of Embodied Agents</h1>
 
 <p align="center">
-  <a href="https://eit-hai.github.io/thea/index.html"><img src="docs/assets/button-project-page-globe.svg" alt="Open the project page" height="30"></a>&ensp;
-  <a href="https://eit-hai.github.io/thea/intro.html"><img src="docs/assets/button-paper.svg" alt="Read the paper" height="30"></a>&ensp;
+  <a href="https://eit-hai.github.io/thea/"><img src="docs/assets/button-project-page-globe.svg" alt="Open the project page" height="30"></a>&ensp;
+  <a href="https://eit-hai.github.io/thea/paper.pdf"><img src="docs/assets/button-paper.svg" alt="Read the paper" height="30"></a>&ensp;
   <a href="https://youtu.be/Sm9jFmfnOF0"><img src="docs/assets/button-youtube.svg" alt="Watch the demo on YouTube" height="30"></a><a href="https://github.com/EIT-HAI/Thea/releases/download/demo-v1/act1.mp4"><img src="docs/assets/button-bilibili.svg" alt="Watch the demo on Bilibili" height="30"></a>&ensp;
   <a href="https://eit-hai.github.io/thea/documentation/"><img src="docs/assets/button-docs.svg" alt="Open the docs" height="30"></a>&ensp;
   <a href="#citation"><img src="docs/assets/button-bibtex.svg" alt="Jump to BibTeX" height="30"></a>
