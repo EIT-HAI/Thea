@@ -2,7 +2,7 @@
 
 <p align="center">
   <a href="https://eit-hai.github.io/thea/"><img src="docs/assets/button-project-page-globe.svg" alt="Open the project page" height="30"></a>&ensp;
-  <a href="https://eit-hai.github.io/thea/paper.pdf"><img src="docs/assets/button-paper.svg" alt="Read the paper" height="30"></a>&ensp;
+  <a href="https://arxiv.org/abs/2608.11246"><img src="docs/assets/button-paper.svg" alt="Read the paper" height="30"></a>&ensp;
   <a href="https://youtu.be/Sm9jFmfnOF0"><img src="docs/assets/button-youtube.svg" alt="Watch the demo on YouTube" height="30"></a><a href="https://www.bilibili.com/video/BV1q9uc6tEqJ/"><img src="docs/assets/button-bilibili.svg" alt="Watch the demo on Bilibili" height="30"></a>&ensp;
   <a href="https://eit-hai.github.io/thea/documentation/"><img src="docs/assets/button-docs.svg" alt="Open the docs" height="30"></a>&ensp;
   <a href="#citation"><img src="docs/assets/button-bibtex.svg" alt="Jump to BibTeX" height="30"></a>
