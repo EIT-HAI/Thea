@@ -55,7 +55,14 @@ def test_run_script_cli_preflight_requires_no_lark_credentials(
     venv = tmp_path / "harness-only-venv"
     bin_dir = venv / "bin"
     bin_dir.mkdir(parents=True)
-    (bin_dir / "python").symlink_to(Path(sys.executable))
+    launcher = bin_dir / "python"
+    # A symlink resolves to the base interpreter and loses the packages of the
+    # virtual environment running the suite, so hand off to it explicitly.
+    launcher.write_text(
+        f'#!/bin/sh\nexec "{sys.executable}" "$@"\n',
+        encoding="utf-8",
+    )
+    launcher.chmod(0o755)
     environment["THEA_VENV"] = str(venv)
 
     completed = subprocess.run(
