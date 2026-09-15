@@ -4,8 +4,8 @@
   <a href="https://eit-hai.github.io/thea/"><img src="docs/assets/button-project-page-globe.svg" alt="打开项目主页" height="30"></a>&ensp;
   <a href="https://arxiv.org/abs/2608.11246"><img src="docs/assets/button-paper.svg" alt="阅读论文" height="30"></a>&ensp;
   <a href="https://youtu.be/Sm9jFmfnOF0"><img src="docs/assets/button-youtube.svg" alt="在 YouTube 观看演示" height="30"></a><a href="https://www.bilibili.com/video/BV1q9uc6tEqJ/"><img src="docs/assets/button-bilibili.svg" alt="在 Bilibili 观看演示" height="30"></a>&ensp;
-  <a href="https://eit-hai.github.io/thea/documentation/"><img src="docs/assets/button-docs.svg" alt="打开文档" height="30"></a>
-  <sub><a href="https://eit-hai.github.io/thea/documentation/">English</a> · <a href="https://eit-hai.github.io/thea/documentation/zh-cn/index.html">中文</a></sub>&ensp;
+  <a href="https://eit-hai.github.io/thea/documentation/"><img src="docs/assets/button-docs.svg" alt="打开文档" height="30"></a>&ensp;
+  <a href="https://eit-hai.github.io/thea/documentation/"><img src="docs/assets/button-lang-english.svg" alt="Read the docs in English" height="30"></a><img src="docs/assets/button-lang-separator.svg" alt="" height="30"><a href="https://eit-hai.github.io/thea/documentation/zh-cn/index.html"><img src="docs/assets/button-lang-zh.svg" alt="阅读中文文档" height="30"></a>&ensp;
   <a href="#引用"><img src="docs/assets/button-bibtex.svg" alt="跳转到 BibTeX" height="30"></a>
 </p>
 

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="12" height="30" viewBox="0 0 12 30" role="img" aria-hidden="true">
+  <style>
+    .ink { color: #2e2f2a; }
+    .label { fill: currentColor; font-family: Lato, Arial, sans-serif; font-size: 18.36px; font-weight: 400; }
+    @media (prefers-color-scheme: dark) { .ink { color: #f2f3f2; } }
+  </style>
+  <g class="ink">
+    <text class="label" x="3" y="21">·</text>
+  </g>
+</svg>
