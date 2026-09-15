@@ -4,20 +4,16 @@
   <a href="https://eit-hai.github.io/thea/"><img src="docs/assets/button-project-page-globe.svg" alt="打开项目主页" height="30"></a>&ensp;
   <a href="https://arxiv.org/abs/2608.11246"><img src="docs/assets/button-paper.svg" alt="阅读论文" height="30"></a>&ensp;
   <a href="https://youtu.be/Sm9jFmfnOF0"><img src="docs/assets/button-youtube.svg" alt="在 YouTube 观看演示" height="30"></a><a href="https://www.bilibili.com/video/BV1q9uc6tEqJ/"><img src="docs/assets/button-bilibili.svg" alt="在 Bilibili 观看演示" height="30"></a>&ensp;
-  <a href="https://eit-hai.github.io/thea/documentation/"><img src="docs/assets/button-docs.svg" alt="打开文档" height="30"></a>&ensp;
+  <a href="https://eit-hai.github.io/thea/documentation/"><img src="docs/assets/button-docs.svg" alt="打开文档" height="30"></a>
+  <sub><a href="https://eit-hai.github.io/thea/documentation/">English</a> · <a href="https://eit-hai.github.io/thea/documentation/zh-cn/index.html">中文</a></sub>&ensp;
   <a href="#引用"><img src="docs/assets/button-bibtex.svg" alt="跳转到 BibTeX" height="30"></a>
 </p>
 
 <p align="center">
-  语言:
+  README:
   <a href="README.md">English</a>
   ·
   <a href="README.zh-CN.md">简体中文</a>
-  <br>
-  文档:
-  <a href="https://eit-hai.github.io/thea/documentation/">English</a>
-  ·
-  <a href="https://eit-hai.github.io/thea/documentation/zh-cn/index.html">中文文档</a>
 </p>
 
 <h3 align="center">一句话：Thea 把代码智能体带到真实物理世界。</h3>
