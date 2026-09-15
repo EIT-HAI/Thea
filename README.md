@@ -8,6 +8,18 @@
   <a href="#citation"><img src="docs/assets/button-bibtex.svg" alt="Jump to BibTeX" height="30"></a>
 </p>
 
+<p align="center">
+  Language:
+  <a href="README.md">English</a>
+  ·
+  <a href="README.zh-CN.md">简体中文</a>
+  <br>
+  Documentation:
+  <a href="https://eit-hai.github.io/thea/documentation/">English</a>
+  ·
+  <a href="https://eit-hai.github.io/thea/documentation/zh-cn/index.html">中文文档</a>
+</p>
+
 <h3 align="center">TL;DR: Thea brings coding agents to the physical world.</h3>
 
 <br>
@@ -249,6 +261,7 @@ organizes the public interfaces by integration task:
 - [Scene Graph](https://eit-hai.github.io/thea/documentation/scene-graph/index.html)
 - [Evaluation](https://eit-hai.github.io/thea/documentation/evaluation/index.html)
 - [Reference](https://eit-hai.github.io/thea/documentation/reference/index.html)
+- [中文文档](https://eit-hai.github.io/thea/documentation/zh-cn/index.html)
 
 Package-local guides are available for the [Harness](harness/README.md),
 [simulation adapters](simulation/README.md), and [Feishu/Lark channel](lark/README.md).

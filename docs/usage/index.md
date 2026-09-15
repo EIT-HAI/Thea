@@ -4,6 +4,8 @@ Thea is a provider-neutral Harness for embodied agents. It owns the Agentic
 Loop, context lifetimes, Tool execution, post-execution Evaluation, and the
 boundaries through which a deployment supplies physical-world evidence.
 
+Prefer Chinese? Read the [中文文档](../zh-cn/index.md).
+
 The public release can be used in five ways:
 
 | Deployment | What you provide | What Thea provides |

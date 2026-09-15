@@ -21,6 +21,9 @@ html_theme.sidebar_secondary.remove: true
       <a class="thea-button" href="setup/index.html">
         Install and set up
       </a>
+      <a class="thea-button" href="zh-cn/index.html">
+        中文文档
+      </a>
     </div>
   </div>
   <div class="thea-hero__signal" aria-label="Thea design principles">
@@ -116,6 +119,7 @@ html_theme.sidebar_secondary.remove: true
 
 usage/index
 setup/index
+zh-cn/index
 harness/index
 scene-graph/index
 evaluation/index
