@@ -1,11 +1,12 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="43" height="30" viewBox="0 0 43 30" role="img" aria-labelledby="title">
-  <title id="title">中文</title>
+<svg xmlns="http://www.w3.org/2000/svg" width="33" height="30" viewBox="0 0 33 30" role="img" aria-labelledby="title">
+  <title id="title">ZH]</title>
   <style>
     .ink { color: #2e2f2a; }
-    .label { fill: currentColor; font-family: "Noto Sans CJK SC", "PingFang SC", "Microsoft YaHei", Lato, Arial, sans-serif; font-size: 18.36px; font-weight: 400; }
-    @media (prefers-color-scheme: dark) { .ink { color: #f2f3f2; } }
+    .label { fill: currentColor; font-family: Lato, Arial, sans-serif; font-size: 18.36px; font-weight: 400; }
+    .link { fill: #0969da; }
+    @media (prefers-color-scheme: dark) { .ink { color: #f2f3f2; } .link { fill: #4493f8; } }
   </style>
   <g class="ink">
-    <text class="label" x="0" y="21">中文</text>
+    <text class="label" x="0" y="21"><tspan class="link">ZH</tspan>]</text>
   </g>
 </svg>

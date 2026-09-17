@@ -5,8 +5,6 @@ Thea 是一个面向具身智能体的 Harness。它把模型、物理世界工�
 模型供应商、机器人 SDK、仿真器、策略后端或用户通道。
 
 这份中文文档覆盖 Thea 的核心概念、安装方式、部署路径和安全边界。
-GitHub 上也提供
-[中文 README](https://github.com/EIT-HAI/Thea/blob/main/README.zh-CN.md)。
 
 ## 文档目录
 

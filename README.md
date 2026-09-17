@@ -4,16 +4,8 @@
   <a href="https://eit-hai.github.io/thea/"><img src="docs/assets/button-project-page-globe.svg" alt="Open the project page" height="30"></a>&ensp;
   <a href="https://arxiv.org/abs/2608.11246"><img src="docs/assets/button-paper.svg" alt="Read the paper" height="30"></a>&ensp;
   <a href="https://youtu.be/Sm9jFmfnOF0"><img src="docs/assets/button-youtube.svg" alt="Watch the demo on YouTube" height="30"></a><a href="https://www.bilibili.com/video/BV1q9uc6tEqJ/"><img src="docs/assets/button-bilibili.svg" alt="Watch the demo on Bilibili" height="30"></a>&ensp;
-  <a href="https://eit-hai.github.io/thea/documentation/"><img src="docs/assets/button-docs.svg" alt="Open the docs" height="30"></a>&ensp;
-  <a href="https://eit-hai.github.io/thea/documentation/"><img src="docs/assets/button-lang-english.svg" alt="Read the docs in English" height="30"></a><img src="docs/assets/button-lang-separator.svg" alt="" height="30"><a href="https://eit-hai.github.io/thea/documentation/zh-cn/index.html"><img src="docs/assets/button-lang-zh.svg" alt="阅读中文文档" height="30"></a>&ensp;
+  <a href="https://eit-hai.github.io/thea/documentation/"><img src="docs/assets/button-docs.svg" alt="Docs" height="30"></a> <a href="https://eit-hai.github.io/thea/documentation/" title="English documentation"><img src="docs/assets/button-lang-english.svg" alt="[EN" height="30"></a><img src="docs/assets/button-lang-separator.svg" alt="|" height="30"><a href="https://eit-hai.github.io/thea/documentation/zh-cn/index.html" title="Chinese documentation"><img src="docs/assets/button-lang-zh.svg" alt="ZH]" height="30"></a>&ensp;
   <a href="#citation"><img src="docs/assets/button-bibtex.svg" alt="Jump to BibTeX" height="30"></a>
-</p>
-
-<p align="center">
-  README:
-  <a href="README.md">English</a>
-  ·
-  <a href="README.zh-CN.md">简体中文</a>
 </p>
 
 <h3 align="center">TL;DR: Thea brings coding agents to the physical world.</h3>
